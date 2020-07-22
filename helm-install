@@ -1,0 +1,9 @@
+helm install local-path-provisioner deploy/chart/ -f deploy/chart/values.yaml
+
+echo "kubectl create -f examples/pvc.yaml"
+echo "kubectl create -f examples/pod.yaml"
+echo "kubectl get pv"
+echo "kubectl get pvc"
+echo "kubectl get pod"
+echo 'kubectl exec volume-test -- sh -c "echo local-path-test > /data/test" '
+echo 'kubectl exec volume-test -- sh -c " cat /data/test" '
