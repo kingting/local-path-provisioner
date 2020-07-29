@@ -24,11 +24,11 @@ storageClass:
 
   ## Set StorageClass as the default StorageClass
   ## Ignored if storageClass.create is false
-  defaultClass: false
+  defaultClass: true
 
   ## Set a StorageClass name
   ## Ignored if storageClass.create is false
-  name: local-path
+  name: standard
 
   ## ReclaimPolicy field of the class, which can be either Delete or Retain
   reclaimPolicy: Delete
